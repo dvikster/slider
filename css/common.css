@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Tahoma, sans-serif;
+}
+.clearfix{
+    clear: both;
+}
+h1{
+    font-size: 30px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0;
+    font-weight: 400;
+}
+.container{
+    max-width: 1024px;
+    margin: 50px auto;
+}
+
+.slider_wrapp{
+    overflow: hidden;
+    width: 941px;
+    margin: 20px auto;
+    padding: 45px 0;
+    position: relative;
+}
+.wrapp_arrow{
+    width: 940px;
+    margin: 60px auto;
+    position: relative;
+}
+.arrow{
+    position: absolute;
+    top: 120px;
+    z-index: 5;
+}
+.arrow.arrow_left{
+    left: -17px;
+}
+.arrow.arrow_right{
+    right: -17px;
+}
+.slider_container{
+    width: 1970px;
+    clear: both;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    -o-transition: all ease 1s;
+    transition: all ease 1s;
+}
+.slider_item{
+    float: left;
+    width: 235px;
+    border: 1px solid #d3d3d3;
+    border-right: none;
+    padding: 15px 15px 50px 15px;
+    position: relative;
+    text-align: center;
+    height: 450px;
+}
+.slider_item:last-child{
+    border-right: 1px solid #d3d3d3;
+}
+.slider_item h2.category{
+    font-size: 16px;
+    color: #72767a;
+    text-transform: uppercase;
+    border-bottom: 1px solid #d3d3d3;;
+    padding: 30px 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+.slider_item img{
+    max-height: 140px;
+    width: auto;
+    padding: 20px 0;
+}
+.slider_item .product_title{
+    font-size: 16px;
+    color: #009be1;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.slider_item .price{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0;
+}
+.slider_item span{
+    font-size: 12px;
+}
+.slider_item span.old_price{
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+.slider_item button{
+    height: 42px;
+    width: 140px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #f0e524;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -70px;
+    outline: none;
+}
+.slider_item button.pink{
+    background-color: #cc3399;
+    color: white;
+}
+.slider_item .highlight{
+    position: absolute;
+    border: 5px solid white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    top: -40px;
+    right: 5px;
+    z-index: 10;
+}
+.slider_item .highlight.hl-green {
+    background-color: #86b022;
+    padding: 23px 0;
+}
+.slider_item .highlight.hl-blue {
+    background-color: #009de1;
+    padding: 12px 0;
+}
+
